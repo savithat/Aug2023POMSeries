@@ -8,4 +8,8 @@ public class CartPage {
 		System.out.println("added cart page");
 	}
 
+	public static void addMethod(){
+		int sum = 2 + 3;
+	}
+
 }
