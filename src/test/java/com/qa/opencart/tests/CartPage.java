@@ -9,4 +9,9 @@ public class CartPage {
 
 	}
 
+public static void addMethod(){
+	int sum = 2 + 3 ;
+}
+
+	
 }
