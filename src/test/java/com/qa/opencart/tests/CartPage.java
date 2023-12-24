@@ -11,5 +11,9 @@ public class CartPage {
 	public static void addMethod(){
 		int sum = 2 + 3;
 	}
+	
+	public static void subtractMethod(){
+		int sum = 2 + 3;
+	}
 
 }
