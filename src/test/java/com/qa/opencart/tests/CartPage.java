@@ -13,7 +13,7 @@ public class CartPage {
 	}
 	
 	public static void subtractMethod(){
-		int sum = 2 + 3;
+		int sum = 5 - 3;
 	}
 
 }
