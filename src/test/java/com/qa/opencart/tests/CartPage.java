@@ -15,5 +15,9 @@ public class CartPage {
 	public static void subtractMethod(){
 		int sum = 5 - 3;
 	}
+	
+	public static void divMethod(){
+		int sum = 5 / 3;
+	}
 
 }
