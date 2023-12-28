@@ -32,7 +32,7 @@ public class BaseTest{
 	
 	@Parameters({"browser"})
 	@BeforeTest
-	public void setUp (@Optional("chrome") String browserName) {
+	public void setUp (String browserName) {
 		df = new DriverFactory(); 
 		prop = df.initProperties();
 		softAssert = new SoftAssert();
