@@ -48,7 +48,7 @@ public class LoginPageTest extends BaseTest{
 	
 	
 	
-	@Description("login page title......")
+	@Description("login page Title......")
 	@Severity(SeverityLevel.MINOR)
 	@Test(priority = 4)
 	public void appLogoExistTest() {
