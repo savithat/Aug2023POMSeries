@@ -15,7 +15,7 @@
 			<class name="com.qa.opencart.tests.LoginPageTest" />
 		</classes>
 	</test>
-	<!--<test name="Registration Page Test">
+	<test name="Registration Page Test">
 		<parameter name="browser" value="edge"></parameter>
 		<classes>
 			<class name="com.qa.opencart.tests.RegistrationPageTest" />
@@ -32,5 +32,5 @@
 		<classes>
 			<class name="com.qa.opencart.tests.ProductInfoTest" />
 		</classes>
-	</test>  -->
+	</test>  
 </suite>
