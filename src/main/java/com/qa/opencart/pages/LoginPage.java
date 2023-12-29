@@ -16,7 +16,7 @@ public class LoginPage {
 	//Encapsulation (bylocators are private members, methods or behaviour is in public)
 	
 	//ByLocators 
-	private By userNameLoc = By.id("input-email11");
+	private By userNameLoc = By.id("input-email");
 	private By passWordLoc = By.id("input-password");
 	private By loginBtnLoc = By.cssSelector("input[type='submit']");
 	private By forgotPwdLinkLoc = By.xpath("//a[text()='Forgotten Password']//preceding-sibling::input");
