@@ -30,6 +30,8 @@ public class BaseTest{
 	protected RegistrationPage registrationPage;
 	protected SoftAssert softAssert;
 	
+	//, "browserversion","testname"
+	//, String browserVersion, String testName
 	@Parameters({"browser"})
 	@BeforeTest
 	public void setUp (String browserName) {
@@ -39,6 +41,8 @@ public class BaseTest{
 		
 		if(browserName != null) {
 			prop.setProperty("browser", browserName);
+//			prop.setProperty("browserversion", browserVersion);
+//			prop.setProperty("testname", testName);
 		}
 		
 		driver = df.initDriver(prop);
