@@ -51,13 +51,13 @@ public class OptionsManager {
  * 
  */
 //			co.setCapability("enableVNC", true);
-//			co.setBrowserVersion(prop.getProperty("browserVersion").trim());
-//			
-//			Map<String, Object> selenoidOptions = new HashMap<>();
-//			selenoidOptions.put("screenResolution", "1280x1024x24");
-//			selenoidOptions.put("enableVNC", true);
-//			selenoidOptions.put("name", prop.getProperty("testname"));
-//			co.setCapability("selenoid:options", selenoidOptions);
+			co.setBrowserVersion(prop.getProperty("browserversion").trim());
+			
+			Map<String, Object> selenoidOptions = new HashMap<>();
+			selenoidOptions.put("screenResolution", "1280x1024x24");
+			selenoidOptions.put("enableVNC", true);
+			selenoidOptions.put("name", prop.getProperty("testname"));
+			co.setCapability("selenoid:options", selenoidOptions);
 
 		}
 		
@@ -81,6 +81,20 @@ public class OptionsManager {
 //			fo.addArguments("--disable-gpu"); // applicable to windows os only
 //			fo.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
 //			fo.addArguments("--no-sandbox"); // Bypass OS security model
+			
+			/**
+			 *  below code is for selenoid			
+			 * 
+			 */
+//			fo.setCapability("enableVNC", true);
+			fo.setBrowserVersion(prop.getProperty("browserversion").trim());
+						
+							
+			Map<String, Object> selenoidOptions = new HashMap<>();
+			selenoidOptions.put("screenResolution", "1280x1024x24");
+			selenoidOptions.put("enableVNC", true);
+			selenoidOptions.put("name", prop.getProperty("testname"));
+			fo.setCapability("selenoid:options", selenoidOptions);
 		}
 		
 		return fo;
@@ -93,7 +107,7 @@ public class OptionsManager {
 		if(Boolean.parseBoolean(prop.getProperty("incognito"))) eo.addArguments("--incongnito--");
 		
 		if(Boolean.parseBoolean(prop.getProperty("remote"))) {
-			eo.setCapability("browserName", "edge");
+			eo.setCapability("browserName", "MicrosoftEdge");
 		
 //			eo.addArguments("start-maximized"); // open Browser in maximized mode
 //			eo.addArguments("disable-infobars"); // disabling infobars

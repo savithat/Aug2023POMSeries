@@ -55,7 +55,7 @@ public class DriverFactory {
 			tlDriver.set(new FirefoxDriver(optionsManager.getFirefoxOptions()));
 			}
 			break;
-		case "edge":
+		case "microsoftedge":
 			if(Boolean.parseBoolean(prop.getProperty("remote"))) {
 				// run it on grid:
 				initRemoteDriver(browserName);
@@ -103,7 +103,7 @@ public class DriverFactory {
 			System.out.println("coming to firefox......");
 			tlDriver.set(new RemoteWebDriver(new URL(prop.getProperty("huburl")), optionsManager.getFirefoxOptions()));
 			break;
-		case "edge":
+		case "microsoftedge":
 			System.out.println("coming to edge......");
 			tlDriver.set(new RemoteWebDriver(new URL(prop.getProperty("huburl")), optionsManager.getEdgeOptions()));
 			break;		
