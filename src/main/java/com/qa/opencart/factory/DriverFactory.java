@@ -88,6 +88,7 @@ public class DriverFactory {
  * run Tests on grid	
  * @param browserName
  */
+	
 	private void initRemoteDriver(String browserName) {
 		System.out.println("Running tests on GRID with browser: " + browserName);
 		System.out.println("username: "+prop.getProperty("username"));
@@ -174,7 +175,7 @@ public class DriverFactory {
 
 	public static String getScreenshot(String methodName) {
 		
-File srcFile = ((TakesScreenshot) getDriver()).getScreenshotAs(OutputType.FILE);
+		File srcFile = ((TakesScreenshot) getDriver()).getScreenshotAs(OutputType.FILE);
 		
 		String path = System.getProperty("user.dir") + "/screenshot/" + methodName + "_" + System.currentTimeMillis()+".png";
 				

@@ -11,14 +11,14 @@
 	
 	<test name="Login Page Test">
 		<parameter name="browser" value="chrome"></parameter>
-  	 <parameter name="browserversion" value="111"></parameter>
+ <!-- 	 <parameter name="browserversion" value="111"></parameter>   --> 
 		<parameter name="testname" value="LoginPageTest"></parameter> 
 		<classes>
 			<class name="com.qa.opencart.tests.LoginPageTest" />
 		</classes>
 	</test>  
 <!--	 <test name="Registration Page Test">
-		<parameter name="browser" value="edge"></parameter>
+		<parameter name="browser" value="microsoftedge"></parameter>
 	 	<parameter name="browserversion" value="113"></parameter>
 		<parameter name="testname" value="RegistrationPageTest"></parameter> 
 		<classes>
@@ -34,7 +34,7 @@
 		</classes>
 	</test>  
 	 <test name="Product Info  Test">
-		<parameter name="browser" value="firefox"></parameter>
+		<parameter name="browser" value="microsoftedge"></parameter>
 			 <parameter name="browserversion" value="116"></parameter>
 		<parameter name="testname" value="ProductInfoTest"></parameter>
 		<classes>
