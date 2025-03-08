@@ -10,7 +10,7 @@
 	</listeners>
 	
 	<test name="Login Page Test">
-		<parameter name="browser" value="microsoftedge"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
  <!-- 	 <parameter name="browserversion" value="111"></parameter>   --> 
 		<parameter name="testname" value="LoginPageTest"></parameter> 
 		<classes>
@@ -26,7 +26,7 @@
 		</classes>
 	</test>    -->
  	<test name="Accounts Page Test">
-		<parameter name="browser" value="microsoftedge"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
 		 <parameter name="browserversion" value="117"></parameter>
 		<parameter name="testname" value="AccountsPageTest"></parameter>  
 		<classes>
@@ -34,7 +34,7 @@
 		</classes>
 	</test>  
 	 <test name="Product Info  Test">
-		<parameter name="browser" value="microsoftedge"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
 			 <parameter name="browserversion" value="116"></parameter>
 		<parameter name="testname" value="ProductInfoTest"></parameter>
 		<classes>
