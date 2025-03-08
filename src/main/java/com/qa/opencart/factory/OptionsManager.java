@@ -51,13 +51,13 @@ public class OptionsManager {
  * 
  */
 //			co.setCapability("enableVNC", true);
-			co.setBrowserVersion(prop.getProperty("browserversion").trim());
-			
-			Map<String, Object> selenoidOptions = new HashMap<>();
-			selenoidOptions.put("screenResolution", "1280x1024x24");
-			selenoidOptions.put("enableVNC", true);
-			selenoidOptions.put("name", prop.getProperty("testname"));
-			co.setCapability("selenoid:options", selenoidOptions);
+//			co.setBrowserVersion(prop.getProperty("browserversion").trim());
+//			
+//			Map<String, Object> selenoidOptions = new HashMap<>();
+//			selenoidOptions.put("screenResolution", "1280x1024x24");
+//			selenoidOptions.put("enableVNC", true);
+//			selenoidOptions.put("name", prop.getProperty("testname"));
+//			co.setCapability("selenoid:options", selenoidOptions);
 
 		}
 		
@@ -87,14 +87,14 @@ public class OptionsManager {
 			 * 
 			 */
 //			fo.setCapability("enableVNC", true);
-			fo.setBrowserVersion(prop.getProperty("browserversion").trim());
+//			fo.setBrowserVersion(prop.getProperty("browserversion").trim());
 						
 							
-			Map<String, Object> selenoidOptions = new HashMap<>();
-			selenoidOptions.put("screenResolution", "1280x1024x24");
-			selenoidOptions.put("enableVNC", true);
-			selenoidOptions.put("name", prop.getProperty("testname"));
-			fo.setCapability("selenoid:options", selenoidOptions);
+//			Map<String, Object> selenoidOptions = new HashMap<>();
+//			selenoidOptions.put("screenResolution", "1280x1024x24");
+//			selenoidOptions.put("enableVNC", true);
+//			selenoidOptions.put("name", prop.getProperty("testname"));
+//			fo.setCapability("selenoid:options", selenoidOptions);
 		}
 		
 		return fo;
