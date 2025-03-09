@@ -33,13 +33,16 @@ public class DriverFactory {
 		String browserName = prop.getProperty("browser");
 	//    highlight =  prop.getProperty("highlight");	
 	//	String browserName = System.getProperty("browser");
-		System.out.println("browserName: "+ browserName);
+		System.out.println("*********browserName: "+ browserName);
 		optionsManager = new OptionsManager(prop);
+		
+		System.out.println("********remote: "+prop.getProperty("remote"));
 
 		switch (browserName.toLowerCase().trim()) {
 		case "chrome":
 			if(Boolean.parseBoolean(prop.getProperty("remote"))) {
 				// run it on grid:
+				System.out.println("*************not suppose to enter******************");
 				initRemoteDriver(browserName);
 			}else{
 	//		driver = new ChromeDriver(optionsManager.getChromeOptions());
@@ -134,7 +137,9 @@ public class DriverFactory {
 
 		FileInputStream ip = null;
 		String envName = System.getProperty("env");
-		System.out.println("env name is: " + envName);
+
+//		String envName = "qa";
+		System.out.println("******env name is: " + envName);
 
 		try {
 			if (envName == null) {
